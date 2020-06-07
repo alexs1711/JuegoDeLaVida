@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Hoja.css" type="text/css"/>
+        <link rel="stylesheet" href="backg.css" type="text/css"/>
+        <script type="text/javascript" src="Funciones.js"></script>
+        <title>Game Of Life</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+   
+    <body>
+        <div  class="neon-text">Game of Life</div>
+     <div id="main" class="shadow1 ">
+    
+        <table class="main" align="center">
+        <tr>
+            <td width="100%">Ancho</td>
+            <td><input id="ancho" type="text" size="5" value="15"/></td>
+        </tr>
+        <tr>
+            <td>Altura</td>
+            <td><input id="altura" type="text" size="5" value="15" /></td>   
+        </tr>
+        <tr>
+            <td>Generación</td>
+            <td><input id="gen" type="text" size="5" value="10"/></td>
+        </tr>
+        <!--<tr>
+            <td>Posiciones Aleatorias</td>
+            <td><input name="pos" type="radio"  value="0"/></td>
+        </tr>-->
+        <tr>
+            <td>Generación en Generación</td>
+            <td ><input name="opcion" id="genEnGen" type="radio" value="0" /></td>
+        </tr>
+        <tr>
+            <td>Sacar X Numero de Generaciones</td>
+            <td ><input name="opcion" id="XnumGen" type="radio"  value="1" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><button onclick="BotonesRadio()" class="a" style="margin-left:110px;" id="iniciar">INICIAR</button></td>
+        </tr>
+
+   </table>
+          
+        </div>
+        <div id="gridContainer" class="shadow">
+            
+        </div>
+        <div id="botones" style="display: none;" ><button id="start"><span>Loop</span></button>
+<button id="clear"><span>Limpiar</span></button>
+<button id="random"><span>Aleatorio</span></button>
+        <button id="next"><span>Siguiente Gen</span></button>
+                <button id="reset"><span>Volver a empezar</span></button></div>
+
+        <div id="CalcularGen" style="display: none;" > 
+            <button id="random2" ><span>Aleatorio</span></button>
+            <button id="Calc" ><span>CalcularGen</span></button>
+             <button id="reset2"><span>Volver a Empezar</span></button>
+             <button id="clearlimpia"><span>Limpiar</span></button>
+        </div>   
+    </body>
+</html>
